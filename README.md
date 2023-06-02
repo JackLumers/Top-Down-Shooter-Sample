@@ -1,5 +1,5 @@
 # TopDownShooterSample
-A sample game that I did as a test task project.
+A sample game that I did as a test task project. Done in 3 days.
 
 # Project Setup
 * Unity version: 2021.3.26f
