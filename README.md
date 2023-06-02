@@ -16,6 +16,7 @@ All configs (like weapons, enemies spawning config, e.t.c) can be found in **Con
 * Rewriting own pooling solution.
 *There was a recommendation to not use 3d party assets for code, so I took my own old Pooling System solution.*
 * Additional weapon logic. Like autimatic weapons that can shot automatically after cooldown when player holds **Fire Button**.
+* Player looking direction mark jitter fix.
 * Animations, fancy models.
 * Camera adjustments, minor refactoring, additional abstraction layers.
 
