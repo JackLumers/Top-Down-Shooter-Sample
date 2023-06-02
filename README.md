@@ -1,8 +1,9 @@
 # TopDownShooterSample
 A sample game that I did as a test task project. Done in 3 days.
 
-# Project Setup
+# Project Setup and Playmode
 * Unity version: 2021.3.26f
+* Enter playmode through **Scenes -> Battle Scene**. That's it.
 
 # Keybinds 
 * **WASD/Arrows** - Player movement
