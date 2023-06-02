@@ -22,5 +22,5 @@ All configs (like weapons, enemies spawning config, e.t.c) can be found in **Con
 
 # Used assets
 * [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) package for simple camera setup.
-* [UniTask](https://github.com/Cysharp/UniTask). This is technically a 3d party solution, but default asynchronous code in Unity is quite painful to write and it's kinda industral standard so why not ¯\_(ツ)_/¯
+* [UniTask](https://github.com/Cysharp/UniTask). This is technically a 3d party solution, but default asynchronous code in Unity is quite painful to write. And UniTask is kinda industral standard so why not ¯\_(ツ)_/¯
  
