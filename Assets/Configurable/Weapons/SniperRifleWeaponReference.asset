@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473f45048c764a1ca1f1798c27bea860, type: 3}
+  m_Name: SniperRifleWeaponReference
+  m_EditorClassIdentifier: 
+  WeaponSettings:
+    CooldownMillis: 500
+    Damage: 2
+    DamageZonePrefab: {fileID: 2841470903738985493, guid: ff49a1f291ee0df49b5a5c29030ca90f, type: 3}
+  RangedWeaponSettings:
+    ProjectileSpeed: 1
+    MaxShotDistance: 30

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9e381e7e3241358a593a5b9cf73ac6, type: 3}
+  m_Name: SmallMobPulsingWeaponReference
+  m_EditorClassIdentifier: 
+  WeaponSettings:
+    CooldownMillis: 1000
+    Damage: 1
+    DamageZonePrefab: {fileID: -3103889472863750373, guid: 911ad5cd35e6cf049bdbf1d2ec9baac3, type: 3}
