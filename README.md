@@ -18,9 +18,8 @@ All configs (like weapons, enemies spawning config, e.t.c) can be found in **Con
 *There was a recommendation to not use 3d party assets for code, so I took my own old pooling solution.*
 * Additional weapon logic. Like autimatic weapons that can shot automatically after cooldown when player holds **Fire Button**.
 * Player looking direction mark jitter fix.
-* Animations, fancy models.
-* Camera adjustments.
-* Refactoring, additional abstraction layers.
+* Animations, models.
+* Additional abstraction layers.
 
 # Used assets
 * [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html) package for simple camera setup.
