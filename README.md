@@ -17,7 +17,7 @@ All configs (like weapons, enemies spawning config, e.t.c) can be found in **Con
 * Better and full implementation of [Modular Data](https://youtu.be/raQ3iHhE_Kk?t=934) and Event Architecture by the same Scriptable Objects approach.
 * Rewriting own pooling solution.
 *There was a recommendation to not use 3d party assets for code, so I took my own old pooling solution.*
-* Additional weapon logic. Like autimatic weapons that can shot automatically after cooldown when player holds **Fire Button**.
+* Additional weapon logic. Like automatic weapons that can shot automatically after cooldown when player holds **Fire Button**.
 * Player looking direction mark jitter fix.
 * Animations, models.
 * Additional abstraction layers.
