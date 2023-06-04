@@ -22,6 +22,11 @@ namespace Weapons.Pulse
             SimplePool.CreatePool(PoolName);
         }
 
+        ~PulsingWeapon()
+        {
+            _fireCts?.Dispose();
+        }
+        
         protected override void OnFire(Vector3 direction)
         {
             _fireCts?.Cancel();
@@ -55,13 +60,6 @@ namespace Weapons.Pulse
         {
             damageZone.Affected -= OnDamageZoneAffected;
             SimplePool.Return(damageZone, PoolName);
-        }
-        
-        public override void Dispose()
-        {
-            base.Dispose();
-            
-            _fireCts?.Dispose();
         }
     }
 }

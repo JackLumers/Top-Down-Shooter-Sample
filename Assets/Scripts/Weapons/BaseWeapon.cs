@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Weapons
 {
     [Serializable]
-    public abstract class BaseWeapon : IDisposable
+    public abstract class BaseWeapon
     {
         protected WeaponSettings WeaponSettings;
         protected BaseCharacter Owner;
@@ -16,11 +16,16 @@ namespace Weapons
         
         private CancellationTokenSource _cooldownCts;
         public bool CanFire { get; private set; }
-
+        
         protected BaseWeapon(BaseWeaponReference weaponReference, WeaponSettings weaponSettings)
         {
             WeaponReference = weaponReference;
             WeaponSettings = weaponSettings;
+        }
+        
+        ~BaseWeapon()
+        {
+            _cooldownCts?.Dispose();
         }
 
         public virtual void SetOwner(BaseCharacter owner)
@@ -54,11 +59,6 @@ namespace Weapons
                 .SuppressCancellationThrow();
 
             CanFire = true;
-        }
-        
-        public virtual void Dispose()
-        {
-            _cooldownCts?.Dispose();
         }
     }
 }

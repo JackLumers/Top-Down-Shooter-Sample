@@ -14,7 +14,7 @@ namespace Character.Enemy
 
         private SimpleGroundEnemyAI _simpleGroundEnemyAI;
 
-        private void Start()
+        protected override void InheritAwake()
         {
             Weapon = _weaponReference.CreateWeaponInstance();
             Weapon.SetOwner(this);
@@ -33,12 +33,6 @@ namespace Character.Enemy
                 return;
             
             _simpleGroundEnemyAI.OnAroundDamageTaker(damageTaker);
-        }
-
-        protected override void InheritOnDestroy()
-        {
-            base.InheritOnDestroy();
-            Weapon.Dispose();
         }
     }
 }

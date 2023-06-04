@@ -19,7 +19,7 @@ namespace Character.Player
 
         public Vector3 LookingPoint { get; private set; }
 
-        private void Start()
+        protected override void InheritAwake()
         {
             _transform = transform;
 
@@ -58,15 +58,6 @@ namespace Character.Player
                 _selectedWeaponIndex--;
             else
                 _selectedWeaponIndex++;
-        }
-
-        protected override void InheritOnDestroy()
-        {
-            base.InheritOnDestroy();
-            foreach (var weapon in _weapons)
-            {
-                weapon.Dispose();
-            }
         }
     }
 }

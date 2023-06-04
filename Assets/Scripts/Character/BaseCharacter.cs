@@ -41,7 +41,11 @@ namespace Character
             _characterAnimationController = new CharacterAnimationController(_animator, _modelMeshRenderer);
             
             Reinit();
+
+            InheritAwake();
         }
+
+        protected virtual void InheritAwake() { }
 
         /// <summary>
         /// Sets values to their default state, as if character was just spawned.
@@ -153,9 +157,6 @@ namespace Character
             InheritOnDestroy();
         }
 
-        protected virtual void InheritOnDestroy()
-        {
-            
-        }
+        protected virtual void InheritOnDestroy() { }
     }
 }
